@@ -5,9 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS Course</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 200px;
+            margin: 32px auto;
+        }
+
+        .button {
+            font: inherit;
+            border: 1px solid #521751;
+            background: #521751;
+            color: white;
+            padding: 3px 10px;
+            cursor: pointer;
+        }
+
+        .button:active,
+        .button:hover {
+            background: #722a71;
+        }
+
+        .button:focus {
+            outline: none;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <button class="button">Buy</button>
+        <button class="btn btn-primary">Buy</button>
+        <button class="bg-purple hover:bg-purple-dark text-white font-bold py-2 px-4 rounded">Buy</button>
+    </div>
 </body>
 </html>
 
